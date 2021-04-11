@@ -1,0 +1,33 @@
+{
+  "name": "blog-advance",
+  "version": "0.0.1",
+  "description": "react advance blog",
+  "main": "lib/server.js",
+  "repository": "git@github.com:RikLakhe/blog-advance.git",
+  "author": "rikeshshrestha <rikeshshrestha@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "pm2": "^4.5.6"
+  }
+}

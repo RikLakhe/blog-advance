@@ -7,24 +7,29 @@
   "author": "rikeshshrestha <rikeshshrestha@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
-    "webpack": "webpack --config webpack.config.js --progress --watch"
-  },
-  "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "dev": "pm2 start lib/server.js --watch --interpreter node_modules/@babel/node/bin/babel-node.js",
+    "dev:log": "pm2 log",
+    "dev:stop": "pm2 stop 0",
+    "webpack": "webpack --config webpack.config.js --progress --watch",
+    "test": "jest",
+    "babel-node": "babel-node --presets='@babel/preset-env' --ignore='foo|bar|baz'"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.24.0",
-    "eslint-plugin-react": "^7.23.2"
+    "eslint-plugin-react": "^7.23.2",
+    "jest": "^26.6.3"
   },
   "dependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-arrow-functions": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
     "babel-cli": "^6.26.0",
-    "babel-loader": "^7",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",

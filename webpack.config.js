@@ -2,7 +2,7 @@ const path = require('path');
 
 const config = {
     mode: process.env.mode || 'development',
-    entry: ['babel-polyfill','./lib/components/Index.js'],
+    entry: ['babel-polyfill','./lib/components/index.js'],
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js',

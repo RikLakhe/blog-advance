@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      style={
+        Object {
+          "borderBottomColor": "#aaa",
+          "borderBottomStyle": "solid",
+          "borderBottomWidth": 1,
+          "marginBottom": 10,
+          "paddingBottom": 10,
+        }
+      }
+    />
+    <div>
+      Invalid Date
+    </div>
+    <div>
+      <a>
+         
+      </a>
+    </div>
+    <div />
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "borderBottomColor": "#aaa",
+          "borderBottomStyle": "solid",
+          "borderBottomWidth": 1,
+          "marginBottom": 10,
+          "paddingBottom": 10,
+        }
+      }
+    />
+    <div>
+      Invalid Date
+    </div>
+    <div>
+      <a>
+         
+      </a>
+    </div>
+    <div />
+  </div>
+</div>
+`;
